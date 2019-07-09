@@ -2,13 +2,10 @@ package com.vision.erp.service.domain;
 
 public class Vendor {
 
-	//constructor
 	public Vendor() {
-		// TODO Auto-generated constructor stub
 		super();
 	}
-
-	//field
+	
 	private String vendorNo;
 	private String vendorName;
 	private String vendorCategoryCodeNo;
@@ -21,9 +18,7 @@ public class Vendor {
 	private String address;
 	private String zipCode;
 	private String detailAddress;
-	private String vendorAccountNo;
-	
-	//getter, setter
+	private Account vendorAccount;
 	public String getVendorNo() {
 		return vendorNo;
 	}
@@ -96,14 +91,13 @@ public class Vendor {
 	public void setDetailAddress(String detailAddress) {
 		this.detailAddress = detailAddress;
 	}
-	public String getVendorAccountNo() {
-		return vendorAccountNo;
+	public Account getVendorAccount() {
+		return vendorAccount;
 	}
-	public void setVendorAccountNo(String vendorAccountNo) {
-		this.vendorAccountNo = vendorAccountNo;
+	public void setVendorAccount(Account vendorAccount) {
+		this.vendorAccount = vendorAccount;
 	}
 	
-	//toString
 	@Override
 	public String toString() {
 		return "Vendor [vendorNo=" + vendorNo + ", vendorName=" + vendorName + ", vendorCategoryCodeNo="
@@ -111,7 +105,7 @@ public class Vendor {
 				+ ", vendorUsageStatusCodeNo=" + vendorUsageStatusCodeNo + ", vendorUsageStatusCodeName="
 				+ vendorUsageStatusCodeName + ", vendorPhone=" + vendorPhone + ", vendorTel=" + vendorTel
 				+ ", representativeName=" + representativeName + ", address=" + address + ", zipCode=" + zipCode
-				+ ", detailAddress=" + detailAddress + ", vendorAccountNo=" + vendorAccountNo + "]";
+				+ ", detailAddress=" + detailAddress + ", vendorAccount=" + vendorAccount + "]";
 	}
 	
 }

@@ -2,22 +2,25 @@ package com.vision.erp.service.domain;
 
 public class Salary {
 
-	//constructor
 	public Salary() {
 		super();
 	}
 	
-	//field
+	private String salaryNumbering;
 	private String salaryDate;
 	private String employeeNo;
 	private String individualTotalSalary;
 	private String salaryStatusCodeNo;
 	private String salaryStatusCodeName;
 	private String wage;
-	private String regularWorkTime;
-	private String extendWorkTime;
-	
-	//getter, setter
+	private String totalRegularWorkTime;
+	private String totalExtendWorkTime;
+	public String getSalaryNumbering() {
+		return salaryNumbering;
+	}
+	public void setSalaryNumbering(String salaryNumbering) {
+		this.salaryNumbering = salaryNumbering;
+	}
 	public String getSalaryDate() {
 		return salaryDate;
 	}
@@ -54,27 +57,27 @@ public class Salary {
 	public void setWage(String wage) {
 		this.wage = wage;
 	}
-	public String getRegularWorkTime() {
-		return regularWorkTime;
+	public String getTotalRegularWorkTime() {
+		return totalRegularWorkTime;
 	}
-	public void setRegularWorkTime(String regularWorkTime) {
-		this.regularWorkTime = regularWorkTime;
+	public void setTotalRegularWorkTime(String totalRegularWorkTime) {
+		this.totalRegularWorkTime = totalRegularWorkTime;
 	}
-	public String getExtendWorkTime() {
-		return extendWorkTime;
+	public String getTotalExtendWorkTime() {
+		return totalExtendWorkTime;
 	}
-	public void setExtendWorkTime(String extendWorkTime) {
-		this.extendWorkTime = extendWorkTime;
+	public void setTotalExtendWorkTime(String totalExtendWorkTime) {
+		this.totalExtendWorkTime = totalExtendWorkTime;
 	}
 	
-	//toString
+	
 	@Override
 	public String toString() {
-		return "Salary [salaryDate=" + salaryDate + ", employeeNo=" + employeeNo + ", individualTotalSalary="
-				+ individualTotalSalary + ", salaryStatusCodeNo=" + salaryStatusCodeNo + ", salaryStatusCodeName="
-				+ salaryStatusCodeName + ", wage=" + wage + ", regularWorkTime=" + regularWorkTime + ", extendWorkTime="
-				+ extendWorkTime + "]";
+		return "Salary [salaryNumbering=" + salaryNumbering + ", salaryDate=" + salaryDate + ", employeeNo="
+				+ employeeNo + ", individualTotalSalary=" + individualTotalSalary + ", salaryStatusCodeNo="
+				+ salaryStatusCodeNo + ", salaryStatusCodeName=" + salaryStatusCodeName + ", wage=" + wage
+				+ ", totalRegularWorkTime=" + totalRegularWorkTime + ", totalExtendWorkTime=" + totalExtendWorkTime
+				+ "]";
 	}
-
 	
 }

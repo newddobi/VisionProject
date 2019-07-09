@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserMapper">
+ 	
+ 	
+	<resultMap id="userSelectMap" type="member">
+		<result property="userId" 			column="user_id" 			jdbcType="VARCHAR"/>
+ 		<association property="has a 관계를 갖는 필드명을 적으세요" javaType="alias나 fqcn 클래스 이름을 적으세요">
+			<result property="바인딩할 필드명" column="column명" jdbcType="CHAR"/>
+		</association>	
+	</resultMap>
+	
+	
+	<select id="getUser">
+	
+	</select>
+	
+	<update id="updateUser">
+	
+	</update>
+</mapper>

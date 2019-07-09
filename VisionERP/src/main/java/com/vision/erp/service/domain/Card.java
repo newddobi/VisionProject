@@ -2,16 +2,13 @@ package com.vision.erp.service.domain;
 
 public class Card {
 
-	//constructor
 	public Card() {
 		super();
 	}
 	
-	//field
 	private String cardRegNo;
 	private String cardNo;
-	private String cardManagerNo;
-	private String cardManagerName;
+	private String cardManager;
 	private String cardCategoryCodeNo;
 	private String cardCategoryCodeName;
 	private String cardName;
@@ -20,9 +17,8 @@ public class Card {
 	private String cardImage;
 	private String cardUsageStatusCodeNo;
 	private String cardUsageStatusCodeName;
-	private Account account;
+	private String accountNo;
 	
-	//getter, setter
 	public String getCardRegNo() {
 		return cardRegNo;
 	}
@@ -35,17 +31,11 @@ public class Card {
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
-	public String getCardManagerNo() {
-		return cardManagerNo;
+	public String getCardManager() {
+		return cardManager;
 	}
-	public void setCardManagerNo(String cardManagerNo) {
-		this.cardManagerNo = cardManagerNo;
-	}
-	public String getCardManagerName() {
-		return cardManagerName;
-	}
-	public void setCardManagerName(String cardManagerName) {
-		this.cardManagerName = cardManagerName;
+	public void setCardManager(String cardManager) {
+		this.cardManager = cardManager;
 	}
 	public String getCardCategoryCodeNo() {
 		return cardCategoryCodeNo;
@@ -95,23 +85,22 @@ public class Card {
 	public void setCardUsageStatusCodeName(String cardUsageStatusCodeName) {
 		this.cardUsageStatusCodeName = cardUsageStatusCodeName;
 	}
-	public Account getAccount() {
-		return account;
+	public String getAccountNo() {
+		return accountNo;
 	}
-	public void setAccount(Account account) {
-		this.account = account;
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
 	}
 	
-	//toString
 	@Override
 	public String toString() {
-		return "Card [cardRegNo=" + cardRegNo + ", cardNo=" + cardNo + ", cardManagerNo=" + cardManagerNo
-				+ ", cardManagerName=" + cardManagerName + ", cardCategoryCodeNo=" + cardCategoryCodeNo
-				+ ", cardCategoryCodeName=" + cardCategoryCodeName + ", cardName=" + cardName + ", cardCompanyCodeNo="
-				+ cardCompanyCodeNo + ", cardCompanyCodeName=" + cardCompanyCodeName + ", cardImage=" + cardImage
-				+ ", cardUsageStatusCodeNo=" + cardUsageStatusCodeNo + ", cardUsageStatusCodeName="
-				+ cardUsageStatusCodeName + ", account=" + account + "]";
+		return "Card [cardRegNo=" + cardRegNo + ", cardNo=" + cardNo + ", cardManager=" + cardManager
+				+ ", cardCategoryCodeNo=" + cardCategoryCodeNo + ", cardCategoryCodeName=" + cardCategoryCodeName
+				+ ", cardName=" + cardName + ", cardCompanyCodeNo=" + cardCompanyCodeNo + ", cardCompanyCodeName="
+				+ cardCompanyCodeName + ", cardImage=" + cardImage + ", cardUsageStatusCodeNo=" + cardUsageStatusCodeNo
+				+ ", cardUsageStatusCodeName=" + cardUsageStatusCodeName + ", accountNo=" + accountNo + "]";
 	}
+	
 	
 
 }

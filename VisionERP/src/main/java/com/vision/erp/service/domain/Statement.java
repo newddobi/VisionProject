@@ -1,37 +1,26 @@
 package com.vision.erp.service.domain;
 
 public class Statement {
-	
-	//constructor
+
 	public Statement() {
 		super();
 	}
 
-	//field
 	private String statementNo;
-	private String tradeTargetNo;
 	private String tradeTargetName;
 	private String tradeDate;
-	private String accountRegNo;
+	private String accountNo;
 	private String tradeAmount;
 	private String statementCategoryCodeNo;
 	private String statementCategoryCodeName;
 	private String statementUsageStatusCodeNo;
 	private String statementUsageStatusCodeName;
 	private String statementDetail;
-	
-	//getter, setter
 	public String getStatementNo() {
 		return statementNo;
 	}
 	public void setStatementNo(String statementNo) {
 		this.statementNo = statementNo;
-	}
-	public String getTradeTargetNo() {
-		return tradeTargetNo;
-	}
-	public void setTradeTargetNo(String tradeTargetNo) {
-		this.tradeTargetNo = tradeTargetNo;
 	}
 	public String getTradeTargetName() {
 		return tradeTargetName;
@@ -45,11 +34,11 @@ public class Statement {
 	public void setTradeDate(String tradeDate) {
 		this.tradeDate = tradeDate;
 	}
-	public String getAccountRegNo() {
-		return accountRegNo;
+	public String getAccountNo() {
+		return accountNo;
 	}
-	public void setAccountRegNo(String accountRegNo) {
-		this.accountRegNo = accountRegNo;
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
 	}
 	public String getTradeAmount() {
 		return tradeAmount;
@@ -88,16 +77,20 @@ public class Statement {
 		this.statementDetail = statementDetail;
 	}
 	
-	//toString
 	@Override
 	public String toString() {
-		return "Statement [statementNo=" + statementNo + ", tradeTargetNo=" + tradeTargetNo + ", tradeTargetName="
-				+ tradeTargetName + ", tradeDate=" + tradeDate + ", accountRegNo=" + accountRegNo + ", tradeAmount="
-				+ tradeAmount + ", statementCategoryCodeNo=" + statementCategoryCodeNo + ", statementCategoryCodeName="
-				+ statementCategoryCodeName + ", statementUsageStatusCodeNo=" + statementUsageStatusCodeNo
-				+ ", statementUsageStatusCodeName=" + statementUsageStatusCodeName + ", statementDetail="
-				+ statementDetail + "]";
+		return "Statement [statementNo=" + statementNo + ", tradeTargetName=" + tradeTargetName + ", tradeDate="
+				+ tradeDate + ", accountNo=" + accountNo + ", tradeAmount=" + tradeAmount + ", statementCategoryCodeNo="
+				+ statementCategoryCodeNo + ", statementCategoryCodeName=" + statementCategoryCodeName
+				+ ", statementUsageStatusCodeNo=" + statementUsageStatusCodeNo + ", statementUsageStatusCodeName="
+				+ statementUsageStatusCodeName + ", statementDetail=" + statementDetail + ", getStatementNo()="
+				+ getStatementNo() + ", getTradeTargetName()=" + getTradeTargetName() + ", getTradeDate()="
+				+ getTradeDate() + ", getAccountNo()=" + getAccountNo() + ", getTradeAmount()=" + getTradeAmount()
+				+ ", getStatementCategoryCodeNo()=" + getStatementCategoryCodeNo() + ", getStatementCategoryCodeName()="
+				+ getStatementCategoryCodeName() + ", getStatementUsageStatusCodeNo()="
+				+ getStatementUsageStatusCodeNo() + ", getStatementUsageStatusCodeName()="
+				+ getStatementUsageStatusCodeName() + ", getStatementDetail()=" + getStatementDetail() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
-	
 	
 }

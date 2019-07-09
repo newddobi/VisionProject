@@ -7,5 +7,37 @@
  	 	<typeAliases>
   			<typeAlias type="java.lang.Integer" alias="int"/>
   			<typeAlias type="java.lang.String" alias="string"/>
+  			
+  			<typeAlias type="com.vision.erp.domain.Account" alias="account"/>
+  			<typeAlias type="com.vision.erp.domain.Appointment" alias="appointment"/>
+  			<typeAlias type="com.vision.erp.domain.Approval" alias="approval"/>
+  			<typeAlias type="com.vision.erp.domain.ApprovalForm" alias="approvalForm"/>
+  			<typeAlias type="com.vision.erp.domain.Branch" alias="branch"/>
+  			<typeAlias type="com.vision.erp.domain.BranchDailySales" alias="branchDailySales"/>
+  			<typeAlias type="com.vision.erp.domain.Card" alias="card"/>
+  			<typeAlias type="com.vision.erp.domain.Code" alias="code"/>
+  			<typeAlias type="com.vision.erp.domain.Commute" alias="commute"/>
+  			<typeAlias type="com.vision.erp.domain.DutyHours" alias="dutyHours"/>
+  			<typeAlias type="com.vision.erp.domain.HumanResourceCard" alias="humanResourceCard"/>
+  			<typeAlias type="com.vision.erp.domain.Member" alias="member"/>
+  			<typeAlias type="com.vision.erp.domain.Notice" alias="notice"/>
+  			<typeAlias type="com.vision.erp.domain.OrderFromBranch" alias="orderFromBranch"/>
+  			<typeAlias type="com.vision.erp.domain.OrderFromBranchProduct" alias="orderFromBranchProduct"/>
+  			<typeAlias type="com.vision.erp.domain.OrderToVendor" alias="orderToVendor"/>
+  			<typeAlias type="com.vision.erp.domain.OrderToVendorProduct" alias="orderToVendorProduct"/>
+  			<typeAlias type="com.vision.erp.domain.Product" alias="product"/>
+  			<typeAlias type="com.vision.erp.domain.Salary" alias="salary"/>
+  			<typeAlias type="com.vision.erp.domain.SalaryBook" alias="salaryBook"/>
+  			<typeAlias type="com.vision.erp.domain.SalesMenu" alias="salesMenu"/>
+  			<typeAlias type="com.vision.erp.domain.SalesProduct" alias="salesProduct"/>
+  			<typeAlias type="com.vision.erp.domain.SimpleHumanResouceCard" alias="simpleHumanResourceCard"/>
+  			<typeAlias type="com.vision.erp.domain.Statement" alias="statement"/>
+  			<typeAlias type="com.vision.erp.domain.Vendor" alias="vendor"/>
+  			<typeAlias type="com.vision.erp.domain.WorkAttitude" alias="workAttitude"/>
+  			<typeAlias type="com.vision.erp.domain.WorkAttitudeCode" alias="workAttitudeCode"/>
   		</typeAliases>
+  		
+  		<mappers>
+			<mapper resource="sql/UserMapper.xml"/>
+		</mappers>
   </configuration>
